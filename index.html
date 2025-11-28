@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atharv Kaushik — Portfolio</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    background: radial-gradient(circle at 20% 30%, #3b005a, transparent 40%),
+                radial-gradient(circle at 80% 70%, #0048ff, transparent 40%);
+    animation: bgmove 10s infinite alternate;
+  }
+
+  @keyframes bgmove {
+    0% { background-position: 20% 30%, 80% 70%; }
+    100% { background-position: 30% 40%, 70% 60%; }
+  }
+
+  .hero h1 {
+    font-size: 55px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ff4ecd, #4ea8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeUp 1.5s ease;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 10px;
+    animation: fadeUp 2s ease;
+  }
+
+  .hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    animation: fadeUp 2.5s ease;
+  }
+
+  @keyframes fadeUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .glow-btn {
+    padding: 12px 30px;
+    margin-top: 30px;
+    border: none;
+    background: linear-gradient(90deg, #ff4ecd, #256fff);
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 20px #ff4ecd;
+  }
+
+  .glow-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #4ea8ff;
+  }
+
+  /* About Section */
+  .section {
+    padding: 80px 10%;
+  }
+
+  .section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .about-box {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  }
+
+  /* Skills */
+  .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .skill-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #4ea8ff;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Atharv Kaushik</h1>
+  <h2>👨‍💻 AI & ML Engineer | CSE AIML — VIT Bhopal</h2>
+  <p>Based in Mumbai, India. Crafting intelligent solutions, AI-driven systems, and modern web experiences.</p>
+
+  <a href="mailto:atharvk4000@gmail.com">
+    <button class="glow-btn">Contact Me</button>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
+  <div class="about-box">
+    <p>
+      I’m a Computer Science (AI & ML) student at <b>VIT Bhopal</b> passionate about
+      Artificial Intelligence, Machine Learning, Deep Learning, and building interactive,
+      modern web applications.
+      <br><br>
+      I love creating intelligent systems, experimenting with models, and working on
+      futuristic tech that solves real problems.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Machine Learning</div>
+    <div class="skill-card">Deep Learning</div>
+    <div class="skill-card">HTML / CSS / JS</div>
+    <div class="skill-card">Data Science</div>
+    <div class="skill-card">Neural Networks</div>
+    <div class="skill-card">C++</div>
+    <div class="skill-card">Flask</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Atharv Kaushik — All Rights Reserved
+</footer>
+
+</body>
+</html>
